@@ -19,6 +19,7 @@ func parseTime(s string) (time.Time, error) {
 		time.RFC1123Z,
 		time.RFC3339,
 		time.RFC3339Nano,
+		"2006-01-02", // RFC3339 without time
 	}
 
 	s = strings.TrimSpace(s)
